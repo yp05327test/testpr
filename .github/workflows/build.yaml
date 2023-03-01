@@ -1,6 +1,8 @@
 name: Gitea Actions Demo
 run-name: ${{ github.actor }} is testing out Gitea Actions 🚀
-on: [push]
+on: 
+  - push
+  - pull_request 
 jobs:
   Explore-Gitea-Actions:
     runs-on: ubuntu-latest
